@@ -1,0 +1,38 @@
+body {
+    background-color: #41d4df;
+    font-family: Arial,  sans-serif;
+    padding: 40px;
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+h1 { 
+    color: blue;
+    font-size: 28 px;
+    border-bottom: 3px solid blue;
+    padding-bottom: 30px ;
+}
+
+h2 {
+    color: green;
+    font-size: 18 px;
+    
+}
+
+p{
+    color: #666;
+    font-size: 14 px;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border: 20px;
+    border-radius: 10px; 
+    font-size: 14 px;
+    cursor: pointer;
+    margin: 20px;
+    padding: 12px 28px; 
+}

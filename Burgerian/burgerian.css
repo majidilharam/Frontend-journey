@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(65, 56, 56);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(65, 56, 56);
+    padding: 20px;
+}
+
+.navbar .logo-text {
+    font-size: 40px;
+    color: tomato;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    letter-spacing: 1px;
+    color: rgba(177, 86, 74, 0.904);
+}
+
+.hero {
+    background-image: url(assets/allen-rad-9G_oJBKwi1c-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-text {
+    padding-left: 16rem;
+    padding-bottom: 10rem;
+}
+
+.hero h1 {
+    font-size: 60px;
+    color: white;
+    margin: 20px 0;
+}
+
+.hero span {
+    font-size: 24px;
+    color: rgb(248, 102, 17);
+    font-size: 60px;
+}
+
+
+.hero p {
+    font-size: 24px;
+    color: rgb(224, 214, 214);
+    margin-bottom: 25px;
+}
+
+.btn-row {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-1 {
+    border: none;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-2 {
+    border: none;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-row .btn-1:hover,
+.btn-row .btn-2:hover {
+    background: rgba(177, 86, 74, 0.904);
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 26px;
+}
+
+
+.text-menu {
+    text-align: center;
+    margin: 40px;
+    color: #f8f8f8da;
+    line-height: 1.6;
+    font-size: 3rem;
+}
+
+.menu-items {
+    display: flex;
+    gap: 8rem;
+    max-width: 1100px;
+    margin: 16px auto;
+    padding: 0 60px;
+}
+
+.card {
+    background-color: rgb(248, 102, 17);
+    padding: 16px;
+    border-radius: 26px;
+    transition:0.3s;
+}
+
+.card:hover {
+    background-color: rgba(177, 86, 74, 0.904);
+    transform: translateY(-5px);
+}
+
+.card-info{
+    margin-top: 16px;
+    text-align: center;
+}
+
+.card-info p{
+    color: rgb(255, 250, 250);
+    padding: 12px;
+    margin: 12px 0;
+}
+
+.card-info h3 {
+    font-size: 18px;
+    color: white;
+}
+
+.card-info span {
+    border: none;
+    padding: 8px;
+    background-color: #333;
+    color: white;
+    border-radius: 20px;
+}
+
+.btn-3, .btn-4, .btn-5 {
+    border: none;
+    padding: 8px;
+    background-color: white;
+    color: tomato;
+    margin-left: 5px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-3:hover, .btn-4:hover, .btn-5:hover {
+    background-color: rgba(177, 86, 74, 0.904);
+    color: white;
+    transform: translateY(-5px);
+}
+
+
+.features{
+    display: flex;
+    background: tomato;
+    padding: 60px 40px;
+    margin-top: 60px;
+}
+
+.feature {
+    flex: 1;
+    text-align: center;
+    padding: 16px;
+    border-right: solid 1px white;
+}
+
+.feature:last-child {
+    border-right: none;
+}
+
+.feature h3 {
+    font-size: 24px;
+    color: white;
+    padding: 16px 0;
+
+}
+
+.feature p {
+    font-size: 16px;
+    color: white; 
+}
+
+.feature-icon {
+    font-size: 40px;
+    margin-bottom: 16px;
+}   
+
+.ftr {
+    text-align: center;
+    margin: 20px;
+    font-size: 25px;
+    color: white;
+}

@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #48b3e462;
+    padding: 24px;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    border-radius: 20px;
+    margin: 20px;
+    background: rgb(119, 119, 236);
+}
+
+.navbar h2{
+    color: white;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.nav-links {
+    display: flex;
+    gap: 16px;
+}
+
+.nav-links a:hover {
+    letter-spacing: 1px;
+    color: rgb(65, 65, 206);
+}
+
+.content-1{
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    padding: 28px;
+    margin-bottom: 20px;
+    align-items: center;
+    gap: 20px;
+}
+
+.avatar{ 
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #0f97d662;
+    color: white;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-1 h1 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.content-1 p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+.cards {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 12px;
+    
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    flex: 1;
+    padding: 16px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+.card p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+}
+
+.btn-row {
+    display: flex;
+    gap: 12px;
+}
+
+.btn {
+    padding: 12px;
+    border-radius: 12px ;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background:  rgb(119, 119, 236); 
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+
+.btn:hover {
+    background: rgb(65, 65, 206);
+}
+
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .cards{
+   flex-direction: column;
+    }
+
+    .btn-row {
+        flex-direction: column;
+    }
+}
