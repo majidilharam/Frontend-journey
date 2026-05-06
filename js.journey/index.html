@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar JS & Tailwind</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+    /* Efek untuk tugas yang sudah selesai */
+    .completed span {
+        text-decoration: line-through; /* Memberi garis coret */
+        color: #94a3b8;               /* Mengubah warna teks jadi abu-abu pudar */
+        transition: all 0.3s ease;
+    }
+
+    .completed {
+        background-color: #f1f5f9 !important; /* Mengubah warna kotak jadi lebih gelap */
+        border-left: 5px solid #22c55e;        /* Memberi aksen garis hijau di samping */
+    }
+
+    .completed span {
+        text-decoration: line-through;
+        color: #94a3b8; /* Warna abu-abu pudar */
+        opacity: 0.6;   /* Efek agak transparan */
+    }
+</style>
+</head>
+<body class="bg-slate-100 min-h-screen"> <!-- Latar belakang abu-abu terang agar kotak biru menonjol -->
+
+    <!-- flex-col agar posisi rata tengah vertikal & horizontal rapi -->
+    <div class="flex justify-center pt-20 px-4">
+        
+        <!-- Kotak Utama (Card) -->
+        <div class="bg-blue-500 p-6 md:p-8 rounded-2xl shadow-xl w-full max-w-sm">
+            <h2 class="text-white text-2xl font-bold mb-6 text-center tracking-wide">Daftar Tugas</h2>
+            
+            <!-- Area Input -->
+            <div class="flex gap-2 mb-6">
+                <input type="text" placeholder="Apa yang ingin dikerjakan?" id="taskInput" 
+                       class="flex-1 bg-white rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300 text-gray-700 transition">
+                
+                <button class="bg-blue-700 hover:bg-blue-800 text-white font-semibold rounded-lg px-5 py-2 cursor-pointer transition shadow-md" 
+                        onclick="addTask()">Tambah</button>
+            </div>
+
+            <!-- Area Daftar Tugas (Di dalam kotak yang sama agar rapi) -->
+            <ul id="taskList" class="flex flex-col gap-3">
+                <!-- Tugas akan muncul di sini -->
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
