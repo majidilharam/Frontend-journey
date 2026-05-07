@@ -23,12 +23,38 @@
             </div>
             <div class="flex gap-4">
                 <button
+                    onclick="showModal()"
                     class="text-white text-lg hover:text-indigo-300 cursor-pointer rounded-xl bg-indigo-600 p-2">Login</button>
                 <button
                     class="text-white text-lg hover:text-indigo-300 cursor-pointer rounded-xl bg-indigo-600 p-2">Get
                     Started Free</button>
             </div>
         </nav>
+
+        <section>
+            <div id="modal"
+                class=" hidden flex items-center justify-center bg-black/50 inset-0 fixed">
+                <div class="w-96 bg-white rounded-lg p-6 shadow-xl">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-lg font-bold text-indigo-600">Login</h2>
+                        <button onclick="hideModal()"
+                            class="font-bold text-gray-400 cursor-pointer">X</button>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div>
+                            <label class="block text-sm mt-3 font-semibold">Email</label>
+                            <input class="focus:outline-none focus:border-indigo-500 rounded-lg border border-gray-300 p-2 w-full mt-1" type="text" placeholder="Masukan email anda">
+                        </div>
+                        <div>
+                            <label class="block text-sm mt-3 font-semibold">Password</label>
+                            <input class="focus:outline-none focus:border-indigo-500 rounded-lg border border-gray-300 p-2 w-full mt-1" type="password" placeholder="Masukan password anda">
+                        </div>
+                        <button class=" text-white cursor-pointer rounded-lg bg-indigo-600 p-2">Masuk</button>
+                        <p class="text-center">Belum punya akun? <a href="#" class="text-indigo-600">Daftar</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section
             class="flex justify-between px-20 py-24 border-b border-gray-300">
@@ -39,7 +65,8 @@
                 <h1 class="text-7xl font-bold leading-tight mb-10 ">Organize
                     your work & life <span
                         class="text-indigo-600">effortlessly</span></h1>
-                <p class="text-gray-500 msx-w-sm mb-10 ">AppFlow combines smart task
+                <p class="text-gray-500 msx-w-sm mb-10 ">AppFlow combines smart
+                    task
                     management, goal tracking,
                     and team collaboration in
                     one powerfull app. Built for people who want to get more
@@ -416,6 +443,6 @@
                 </div>
             </div>
         </section>
-
+        <script src="app-flow.js"></script>
     </body>
 </html>
