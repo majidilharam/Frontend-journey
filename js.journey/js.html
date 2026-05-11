@@ -6,14 +6,45 @@
     <title>Document</title>
 </head>
 <body>
+    <style>
+        .counter{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-direction: column;
+            min-height: 100vh;
+            align-items: center;
+        }
+        #angka {
+            font-size: 80px;
+            color: rgb(156, 156, 206);
+            margin-bottom: 20px;
+        }
+
+        button {
+            border: none;
+            border-radius: 20px;
+            background: rgb(156, 156, 206);
+            padding: 12px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: translateY(-7px);
+        }
+
+    </style>
 
 <h1 id="judul">halo majid</h1>
 <button id="tombol">klik saya</button>
+<div class="counter">
 <h1 id="angka">0</h1>
 <button id="btnTambah">Tambah</button>
 <button id="btnKurang">Kurang</button>
 <button id="btnReset">Reset</button>
-
+</div>
 
 
     <script src="jvs.js"></script>

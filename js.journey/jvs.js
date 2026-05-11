@@ -27,8 +27,15 @@ console.log("harga setelah diskon 40%", hargaSetelahDiskon)
 let judul = document.getElementById("judul")
 let tombol = document.getElementById("tombol")
 
+let teksAwal = judul.textContent
+let teksBaru = "hidup jokowi"
+
 tombol.addEventListener("click", function(){
-    judul.textContent = "halo gais"
+    if (judul.textContent === teksAwal) {
+        judul.textContent = teksBaru
+    } else 
+        judul.textContent = teksAwal
+        
 })
 
 
