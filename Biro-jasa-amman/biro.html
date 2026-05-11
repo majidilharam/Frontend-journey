@@ -19,15 +19,75 @@
                 <h1 class="font-bold text-[32px] text-[#4C83FD]">Biro Jasa
                     Amman</h1>
                 <div class="flex gap-8">
-                    <a class="font-semibold text-[16px] hover:text-[#4C83FD]"
+                    <a class="font-semibold text-[26px] hover:text-[#4C83FD]"
                         href="#">Beranda</a>
-                    <a class="font-semibold text-[16px] hover:text-[#4C83FD]"
+                    <a class="font-semibold text-[26px] hover:text-[#4C83FD]"
                         href="#">Layanan</a>
-                    <a class="font-semibold text-[16px] hover:text-[#4C83FD]"
+                    <a class="font-semibold text-[26px] hover:text-[#4C83FD]"
                         href="#">Kontak</a>
                 </div>
+                <button onclick="showModal()"
+                    class="rounded-lg bg-blue-500 text-white p-2  cursor-pointer hover:bg-gray-400">Daftar
+                    Sekarang</button>
             </div>
         </nav>
+
+        <div id="modal"
+            class="hidden fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+            <div class="bg-white rounded-2xl p-6 w-96 shadow-2xl">
+                <div class="flex justify-between items-center space-y-4 ">
+                    <h2 class="text-xl font-bold">Daftar Sekarang</h2>
+                    <button onclick="hideModal()"
+                        class="cursor-pointer text-gray-500">X</button>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div>
+                        <label
+                            class="block text-sm text-gray-600 mb-1">Email</label>
+                        <input
+                            class="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-blue-500"
+                            type="email" placeholder="Masukan email anda">
+                    </div>
+                    <div>
+                        <label
+                            class="block text-sm text-gray-600 mb-1">Alamat</label>
+                        <input
+                            class="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-blue-500"
+                            type="alamat" placeholder="Masukan alamat anda">
+                    </div>
+                    <div>
+                        <label
+                            class="block text-sm text-gray-600 mb-1">No.tlp</label>
+                        <input
+                            class="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-blue-500"
+                            type="no.tlp"
+                            placeholder="Masukan nomor telepon anda">
+                    </div>
+                    <div>
+                        <label class="block text-sm text-gray-600 mb-1">Nik
+                            Ktp</label>
+                        <input
+                            class="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-blue-500"
+                            type="nik ktp" placeholder="Masukan Nik ktp anda">
+                    </div>
+                    <div>
+                        <label class="block text-sm text-gray-600 mb-1">No
+                            STNK</label>
+                        <input
+                            class="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-blue-500"
+                            type="stnk" placeholder="Masukan no stnk anda">
+                    </div>
+                    <div>
+                        <label class="block text-sm text-gray-600 mb-1">No
+                            BPKB</label>
+                        <input
+                            class="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-blue-500"
+                            type="no bpkb" placeholder="Masukan no bpkb anda">
+                    </div>
+                    <button class="rounded-lg bg-blue-500 p-2 text-white hover:bg-gray-400 cursor-pointer ">Daftar</button>
+                </div>
+            </div>
+        </div>
         <section class="hero">
             <div class="flex items-center py-4 px-16">
                 <div class="flex flex-col gap-8">
@@ -53,7 +113,7 @@
                 <div>
                     <img
                         src="assets/image/susan-kirsch-ODyLizQFTSo-unsplash 2.png"
-                        alt srcset>
+                        >
                 </div>
             </div>
         </section>
@@ -66,7 +126,7 @@
                     <div
                         class="rounded-xl shadow-xl bg-white border-0 border w-fit max-w-sm p-4">
                         <div class="border-0 bg-[#DBEAFE] rounded-lg w-fit p-3">
-                            <img src="assets/icon/Icons-date.png" alt srcset>
+                            <img src="assets/icon/Icons-date.png" >
                         </div>
                         <div>
                             <h3 class="font-semibold my-3">
@@ -278,5 +338,6 @@
                     Biro Jasa STNK. Semua Hak Dilindungi.</h1>
             </footer>
         </section>
+        <script src="biro.js"></script>
     </body>
 </html>
