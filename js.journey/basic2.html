@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kasir</title>
+    </head>
+    <body>
+        <h2>Data Customers</h2>
+        <button onclick="renderData('all')">Semua</button>
+        <button  onclick="renderData('cash')">Cash</button>
+        <button  onclick="renderData('transfer')">Transfer</button>
+        <button  onclick="renderData('diskon')">Ada Diskon</button>
+
+        <table border="1" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Total</th>
+                    <th>Diskon</th>
+                    <th>Total Bayar</th>
+                    <th>Pembayaran</th>
+                </tr>
+            </thead>
+            <tbody id="tableCustomers"></tbody>
+        </table>
+        <script src="basic2.js"></script>
+    </body>
+</html>
