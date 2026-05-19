@@ -27,7 +27,7 @@ const customers = [
      {
         nama: "bima",
         total: 130000,
-        pembayaran: true
+        pembayaran: false
     },
 ]
 
@@ -51,9 +51,8 @@ const hitungTotal = (prosesHitung) => {
         persenDiskon = 10
     } else if (prosesHitung.total >= 50000 && prosesHitung.pembayaran) {
         persenDiskon = 5
-    } else if(prosesHitung.total >= 200000 && !prosesHitung.pembayaran){
-        persenDiskon = 0
-    }
+    } else (prosesHitung.total)
+
 
 
     let hitungDiskon = prosesHitung.total * persenDiskon / 100
