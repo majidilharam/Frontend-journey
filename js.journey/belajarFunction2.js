@@ -36,14 +36,14 @@ const hitungDiskon = (rentalDiskon, status) => {
     const pajak = 11
 
     let diskon = 0
-    if (rentalDiskon >= promoDiskon && status.member === true) {
-        diskon = 20
-    } else if (rentalDiskon >= promoDiskon && status.member !== true) {
-        diskon = 5
-    } else if (rentalDiskon < promoDiskon && status.member === true) {
-        diskon = 10
-    } else if (rentalDiskon >= promoDiskon && status.member === true && status.vip === true) {
+    if (rentalDiskon >= promoDiskon && status.member && status.vip) {
         diskon = 25
+    } else if (rentalDiskon >= promoDiskon && status.member) {
+        diskon = 20
+    } else if (rentalDiskon >= promoDiskon && !status.member) {
+        diskon = 5
+    } else if (rentalDiskon < promoDiskon && status.member) {
+        diskon = 10
     }
     let persenDiskon = rentalDiskon * diskon / 100
     let hasilDiskon = rentalDiskon - persenDiskon
@@ -90,7 +90,7 @@ const invoice = (daftarGame, hasilPembayaran, member) => {
         console.log(`${item.nama} 
 ${item.jam} x ${formatRupiah(item.harga)}`)
     }
-    console.log("=============")
+    console.log("===============================")
     console.log("")
     console.log("Total: ", hasilPembayaran.totalBayar)
     console.log("Diskon: ", hasilPembayaran.totalDiskon)
