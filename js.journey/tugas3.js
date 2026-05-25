@@ -1,8 +1,5 @@
 
 
-
-
-
 const totalbayar = (hitungTotal) => {
 
     let persenDiskon = 0
