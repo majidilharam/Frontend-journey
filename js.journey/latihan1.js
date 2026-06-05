@@ -48,7 +48,7 @@ const cariProduk = produk.find((item)=>{
 
 
 const hitungTotal = produk.reduce((acc, item)=>{
-let jumlah = item.harga * item.jumlahP
+let jumlah = item.harga * item.jumlah
 return acc + jumlah
 }, 0)
 
